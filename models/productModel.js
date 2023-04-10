@@ -2,22 +2,21 @@ const mongoose = require('mongoose')
 
 const productSchema = mongoose.Schema(
     {
-        name: {
+         Plant_name: {
             type: String,
-            required: [true, "Please enter a product name"]
+            required: [true, "Please enter your name"]
+        },
+        Origin: {
+            type: String,
+            required: [true, "Please enter a addresss"]
         },
         quantity: {
             type: Number,
             required: true,
-            default: 0
         },
-        price: {
+        no_order: {
             type: Number,
             required: true,
-        },
-        image: {
-            type: String,
-            required: false,
         }
     },
     {
